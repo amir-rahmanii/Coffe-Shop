@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Simple Weather App Design | Nothing4us </title>
+ <link rel="stylesheet" href="./style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="header-input">
+  <input type="text" placeholder="Tehran" class="inputcity">
+    <button class="location-button"><span>Change</span></button>
+</div>
+<div class="container">
+
+  <div class="weather-side">
+    <div class="weather-gradient"></div>
+    <div class="date-container">
+      <h2 class="date-dayname">Sunday</h2><span class="date-day">10 Mar 2024</span><i class="location-icon" data-feather="map-pin"></i><span class="location">Paris, FR</span>
+    </div>
+    <div class="weather-container">
+      <h1 class="weather-temp">29°C</h1>
+      <h3 class="weather-desc">Sunny</h3>
+    </div>
+  </div>
+  <div class="info-side">
+    <div class="today-info-container">
+      <div class="today-info">
+        <div class="precipitation"> <span class="title">PRESSURE</span><span class="value" id="hpa">1016 hpa</span>
+          <div class="clear"></div>
+        </div>
+        <div class="humidity"> <span class="title">HUMIDITY</span><span class="value" id="humidaty-darsad">34 %</span>
+          <div class="clear"></div>
+        </div>
+        <div class="wind"> <span class="title">WIND</span><span class="value" id="WWIND">0 km/h</span>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
