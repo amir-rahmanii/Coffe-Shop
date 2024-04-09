@@ -39,18 +39,35 @@
         font-display: swap;
     }
 
-    body {
-        background-image: url("/Public/images/headerBgDesktop.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+
 }
 
 @layer components {
-    .overlay{
+    .overlay {
         @apply bg-black/40 invisible opacity-0 md:hidden fixed inset-0 w-full h-full z-10 transition-all;
     }
-    .overlay--visible{
-        @apply visible opacity-100 ;
+
+    .overlay--visible {
+        @apply visible opacity-100;
+    }
+
+
+    .circle {
+        @apply  flex items-center justify-center rounded-full border;
+    }
+    .circle-main{
+        @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4 hidden md:flex;
+    }
+
+    .circle--lg {
+        @apply w-[203px] h-[203px] border-white/25;
+    } 
+
+    .circle--md {
+        @apply w-[145px] h-[145px] border-white/50;
+    }
+
+    .circle--sm {
+        @apply w-[95px] h-[95px] border-white/80;
     }
 }

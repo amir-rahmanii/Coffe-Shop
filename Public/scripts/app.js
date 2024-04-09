@@ -41,7 +41,6 @@ const getComponent = () => {
         componentScroll.style.maxHeight = '342px'
         componentScroll.style.overflowY = "scroll"
         componentScroll.style.paddingLeft = "3px"
-        console.log("dsfdsf");
     }
 }
 

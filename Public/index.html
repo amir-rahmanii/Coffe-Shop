@@ -10,7 +10,7 @@
 </head>
 
 <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
-    <!-- all svg -->
+    <!-- App all svg -->
     <svg class="hidden">
         <!-- svg shpping-cart -->
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -138,6 +138,11 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
         </symbol>
 
+        <symbol id="curve" viewBox="0 0 100 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" />
+        </symbol>
+
+
 
 
 
@@ -152,9 +157,9 @@
 
     </svg>
 
-    <!-- Desktop Header -->
+    <!-- App Desktop Header and Mobile Header -->
     <header
-        class="fixed top-9 right-0 left-0 hidden md:flex items-center bg-black/50 w-[98%] lg:w-[90%] h-24 mx-auto px-5 lg:px-10 py-5 rounded-3xl backdrop-blur-[6px]">
+        class="fixed top-9 z-50 right-0 left-0 hidden md:flex items-center bg-black/50 w-[98%] lg:w-[90%] h-24 mx-auto px-5 lg:px-10 py-5 rounded-3xl backdrop-blur-[6px]">
         <div class="flex items-center justify-between w-full">
             <!-- Logo and menu -->
             <nav class="flex items-center gap-x-6 lg:gap-x-9 h-14">
@@ -335,7 +340,6 @@
         </div>
     </header>
 
-    <!-- Mobile Header -->
     <div class="flex items-center justify-between md:hidden px-4 py-3 bg-white dark:bg-zinc-700">
         <!-- icon bars3 -->
         <div id="addMenuMobile" class="cursor-pointer">
@@ -536,7 +540,8 @@
 
             <!-- Main part -->
 
-            <div class="child:border-b child:border-b-gray-100 child:dark:border-b-white/10 child:py-5  overflow-y-auto">
+            <div
+                class="child:border-b child:border-b-gray-100 child:dark:border-b-white/10 child:py-5  overflow-y-auto">
                 <div class="flex gap-x-1 w-full font-DanaMedium">
                     <img class="w-[90px] h-[90px]" src="images/products/p2.png" alt="product 2">
                     <div class="flex flex-col justify-between gap-y-1.5">
@@ -607,7 +612,44 @@
     </div>
 
 
+    <!-- App Main -->
+    <main>
+        <section
+            class="home relative  h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
+            <div class="container relative overflow-y-hidden h-full md:min-h-screen flex justify-end items-center">
+                <div class="text-white">
+                    <h2 class="font-MorabbaBold text-2xl md:text-6xl/[62px] mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h2>
+                    <span class="font-MorabbaLight text-xl md:text-5xl/[64px]"> یک فنجان بالانس !</span>
+                    <span class="w-[100px] h-px md:h-0.5 bg-orange-300 my-3 md:my-8 block"></span>
+                    <p class="max-w-[201px] md:max-w-[460px] text-xs md:text-2xl">قطعا نام آشنای عربیکا را شنیده اید،
+                        عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
+                </div>
+                <!-- Circle -->
+                <div class="circle circle-main circle--lg">
+                    <div class="circle circle--md">
+                        <div class="circle circle--sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Curve  -->
+            <svg class="w-[100px] h-[22px] text-gray-100 dark:text-zinc-800 hidden md:inline-block absolute bottom-0 mx-auto right-0 left-0">
+                <use href="#curve"></use>
+            </svg>
 
+
+
+            <!-- Arrow Circle -->
+            <div
+                class=" absolute bottom-0 mx-auto translate-y-2/4 hidden md:flex right-0 left-0 w-[30px] h-[30px] border-2 border-orange-300 rounded-full items-center justify-center">
+                <svg class="w-4 h-4 text-zinc-700 dark:text-white">
+                    <use href="#chevron-down"></use>
+                </svg>
+
+            </div>
+
+        </section>
+    </main>
 
 
 
