@@ -53,15 +53,16 @@
 
 
     .circle {
-        @apply  flex items-center justify-center rounded-full border;
+        @apply flex items-center justify-center rounded-full border;
     }
-    .circle-main{
+
+    .circle-main {
         @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4 hidden md:flex;
     }
 
     .circle--lg {
         @apply w-[203px] h-[203px] border-white/25;
-    } 
+    }
 
     .circle--md {
         @apply w-[145px] h-[145px] border-white/50;
@@ -70,4 +71,40 @@
     .circle--sm {
         @apply w-[95px] h-[95px] border-white/80;
     }
+
+
+    @media screen and (min-width : 1280px) {
+        html.dark .products {
+            background: url("../images/product-bg.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 900px;
+        }
+
+        .products {
+            background: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)), url("../images/product-bg.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 900px;
+        }
+    }
+
+
+
+
+    .section-title {
+        @apply text-2xl md:text-5xl font-MorabbaMedium text-zinc-700 dark:text-white ;
+    }
+
+    .section-subtitle {
+        @apply inline-block text-lg md:text-3xl font-MorabbaLight mt-0.5 md:mt-1.5 text-zinc-700 dark:text-white;
+    }
+    
+    .section-link {
+        @apply flex items-center text-base md:gap-x-1 md:text-xl text-orange-300 md:hover:bg-orange-300/20 transition-colors h-10 pr-3 pl-1 rounded-md tracking-tightest;
+    }
+
+
+
+
 }

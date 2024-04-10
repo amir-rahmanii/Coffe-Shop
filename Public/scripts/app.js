@@ -71,12 +71,12 @@ overlay.addEventListener('click', () => {
 
 openingSubMobile.addEventListener('click', () => {
     if (flagBySubMenu) {
-        chevron.innerHTML = `<use href="#chevron-up"></use>`
+        chevron.innerHTML = `<use href="#chevron-up-mini"></use>`
         openingSubMobile.classList.add('text-orange-300')
         openSubMenuMobile.style.display = "flex"
         flagBySubMenu = false;
     } else {
-        chevron.innerHTML = `<use href="#chevron-down"></use>`
+        chevron.innerHTML = `<use href="#chevron-down-mini"></use>`
         openingSubMobile.classList.remove('text-orange-300')
         openSubMenuMobile.style.display = "none"
         flagBySubMenu = true;
