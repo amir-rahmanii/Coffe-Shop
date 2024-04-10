@@ -85,7 +85,6 @@
             background: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)), url("../images/product-bg.png");
             background-repeat: no-repeat;
             background-size: 100%;
-            height: 900px;
         }
     }
 
@@ -93,15 +92,30 @@
 
 
     .section-title {
-        @apply text-2xl md:text-5xl font-MorabbaMedium text-zinc-700 dark:text-white ;
+        @apply text-2xl md:text-5xl font-MorabbaMedium text-zinc-700 dark:text-white;
     }
 
     .section-subtitle {
         @apply inline-block text-lg md:text-3xl font-MorabbaLight mt-0.5 md:mt-1.5 text-zinc-700 dark:text-white;
     }
-    
+
     .section-link {
         @apply flex items-center text-base md:gap-x-1 md:text-xl text-orange-300 md:hover:bg-orange-300/20 transition-colors h-10 pr-3 pl-1 rounded-md tracking-tightest;
+    }
+
+
+    .offer {
+        @apply relative;
+    }
+
+    .offer::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        background-color: #EF4444;
     }
 
 
