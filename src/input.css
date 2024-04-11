@@ -78,7 +78,6 @@
             background: url("../images/product-bg.png");
             background-repeat: no-repeat;
             background-size: 100%;
-            height: 900px;
         }
 
         .products {
@@ -116,6 +115,16 @@
         inset: 0;
         margin: auto;
         background-color: #EF4444;
+    }
+
+    .categoryRight{
+        background:linear-gradient(270deg ,rgba(0,0,0,0.6) 33.85% , rgba(243,244,246,0.1) 100%) , url("../images/categories/category-right.jpg");
+        background-size: cover;
+    }
+
+    .categoryLeft{
+        background:linear-gradient(270deg ,rgba(0,0,0,0.6) 33.85% , rgba(243,244,246,0.1) 100%) , url("../images/categories/category-left.jpg");
+        background-size: cover;
     }
 
 
