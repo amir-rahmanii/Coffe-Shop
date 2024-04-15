@@ -117,15 +117,41 @@
         background-color: #EF4444;
     }
 
-    .categoryRight{
-        background:linear-gradient(270deg ,rgba(0,0,0,0.6) 33.85% , rgba(243,244,246,0.1) 100%) , url("../images/categories/category-right.jpg");
+    .categoryRight {
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 33.85%, rgba(243, 244, 246, 0.1) 100%), url("../images/categories/category-right.jpg");
         background-size: cover;
     }
 
-    .categoryLeft{
-        background:linear-gradient(270deg ,rgba(0,0,0,0.6) 33.85% , rgba(243,244,246,0.1) 100%) , url("../images/categories/category-left.jpg");
+    .categoryLeft {
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 33.85%, rgba(243, 244, 246, 0.1) 100%), url("../images/categories/category-left.jpg");
         background-size: cover;
     }
+
+    .blog1 {
+        background-image: url("../images/blogs/blog-1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .blog2 {
+        background-image:url("../images/blogs/blog-2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .blog3 {
+        background-image: url("../images/blogs/blog-3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .blog4 {
+        background-image: url("../images/blogs/blog-4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
 
 
 
